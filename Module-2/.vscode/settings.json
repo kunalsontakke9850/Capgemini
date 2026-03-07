@@ -1,0 +1,10 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "code-runner.executorMap": {
+        "java": "cd \"$workspaceRoot\" && mvn compile exec:java"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.ignoreSelection": true
+}
