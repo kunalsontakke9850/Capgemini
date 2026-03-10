@@ -1,0 +1,5 @@
+base\BaseTest.class
+tests\MultiWindowTest.class
+pages\ChildWindowPage.class
+utils\WindowUtil.class
+pages\HomePage.class
