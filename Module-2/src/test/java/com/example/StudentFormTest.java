@@ -71,20 +71,20 @@ public class StudentFormTest {
         // Fill First Name
         WebElement firstName = driver.findElement(By.id("firstName"));
         firstName.clear();
-        firstName.sendKeys("Juhi");
-        Assertions.assertEquals("Juhi", firstName.getAttribute("value"), "First Name should be filled correctly");
+        firstName.sendKeys("Asha");
+        Assertions.assertEquals("Asha", firstName.getAttribute("value"), "First Name should be filled correctly");
 
         // Fill Last Name
         WebElement lastName = driver.findElement(By.id("lastName"));
         lastName.clear();
-        lastName.sendKeys("Chandurwar");
-        Assertions.assertEquals("Chandurwar", lastName.getAttribute("value"), "Last Name should be filled correctly");
+        lastName.sendKeys("Verma");
+        Assertions.assertEquals("Verma", lastName.getAttribute("value"), "Last Name should be filled correctly");
 
         // Fill Email
         WebElement email = driver.findElement(By.id("userEmail"));
         email.clear();
-        email.sendKeys("juhichandurwar@gmail.com");
-        Assertions.assertEquals("juhichandurwar@gmail.com", email.getAttribute("value"), "Email should be filled correctly");
+        email.sendKeys("asha.verma@example.com");
+        Assertions.assertEquals("asha.verma@example.com", email.getAttribute("value"), "Email should be filled correctly");
 
         // Select Gender
         WebElement genderFemale = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[text()='Female']")));
@@ -142,7 +142,7 @@ public class StudentFormTest {
         // Fill Current Address
         WebElement currentAddress = driver.findElement(By.id("currentAddress"));
         currentAddress.clear();
-        currentAddress.sendKeys("123 Main Street, Nagpur, Maharashtra, India");
+        currentAddress.sendKeys("221 Demo Street, New Delhi, India");
 
         // Select State
         WebElement stateInput = driver.findElement(By.id("react-select-3-input"));

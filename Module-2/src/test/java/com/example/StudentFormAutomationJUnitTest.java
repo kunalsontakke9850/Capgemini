@@ -38,17 +38,17 @@ public class StudentFormAutomationJUnitTest {
         driver.get("https://demoqa.com/automation-practice-form");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("firstName")));
 
-        driver.findElement(By.id("firstName")).sendKeys("Kunal");
-        driver.findElement(By.id("lastName")).sendKeys("Sontakke");
-        driver.findElement(By.id("userEmail")).sendKeys("kunalsontakke900@gmail.com");
+        driver.findElement(By.id("firstName")).sendKeys("Arjun");
+        driver.findElement(By.id("lastName")).sendKeys("Mehta");
+        driver.findElement(By.id("userEmail")).sendKeys("arjun.mehta@example.com");
         driver.findElement(By.xpath("//label[text()='Male']")).click();
-        driver.findElement(By.id("userNumber")).sendKeys("9850777484");
+        driver.findElement(By.id("userNumber")).sendKeys("9876543210");
 
         driver.findElement(By.id("dateOfBirthInput")).click();
-        driver.findElement(By.className("react-datepicker__year-select")).sendKeys("2003");
-        driver.findElement(By.className("react-datepicker__month-select")).sendKeys("October");
+        driver.findElement(By.className("react-datepicker__year-select")).sendKeys("2000");
+        driver.findElement(By.className("react-datepicker__month-select")).sendKeys("January");
         wait.until(ExpectedConditions.elementToBeClickable(
-                By.xpath("//div[contains(@class,'react-datepicker__day') and not(contains(@class,'outside-month')) and text()='10']")))
+                By.xpath("//div[contains(@class,'react-datepicker__day') and not(contains(@class,'outside-month')) and text()='15']")))
                 .click();
 
         WebElement subjectsInput = driver.findElement(By.id("subjectsInput"));
@@ -56,7 +56,7 @@ public class StudentFormAutomationJUnitTest {
         subjectsInput.sendKeys(Keys.ENTER);
 
         driver.findElement(By.xpath("//label[@for='hobbies-checkbox-1']")).click();
-        driver.findElement(By.id("currentAddress")).sendKeys("Rautwadi, Jatherpeth, Akola, Maharashtra, India");
+        driver.findElement(By.id("currentAddress")).sendKeys("221 Demo Street, New Delhi, India");
 
         WebElement stateInput = driver.findElement(By.id("react-select-3-input"));
         stateInput.sendKeys("NCR");

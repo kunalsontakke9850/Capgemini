@@ -20,25 +20,25 @@ public class StudentFormAutomation {
             driver.get("https://demoqa.com/automation-practice-form");
 
             // First Name
-            driver.findElement(By.id("firstName")).sendKeys("Kunal");
+            driver.findElement(By.id("firstName")).sendKeys("Arjun");
 
             // Last Name
-            driver.findElement(By.id("lastName")).sendKeys("Sontakke");
+            driver.findElement(By.id("lastName")).sendKeys("Mehta");
 
             // Email
-            driver.findElement(By.id("userEmail")).sendKeys("kunalsontakke900@gmail.com");
+            driver.findElement(By.id("userEmail")).sendKeys("arjun.mehta@example.com");
 
             // Gender
             driver.findElement(By.xpath("//label[text()='Male']")).click();
 
             // Mobile
-            driver.findElement(By.id("userNumber")).sendKeys("9850777484");
+            driver.findElement(By.id("userNumber")).sendKeys("9876543210");
 
             // Date of Birth
             driver.findElement(By.id("dateOfBirthInput")).click();
-            driver.findElement(By.className("react-datepicker__year-select")).sendKeys("2003");
-            driver.findElement(By.className("react-datepicker__month-select")).sendKeys("October");
-            driver.findElement(By.xpath("//div[text()='10']")).click();
+            driver.findElement(By.className("react-datepicker__year-select")).sendKeys("2000");
+            driver.findElement(By.className("react-datepicker__month-select")).sendKeys("January");
+            driver.findElement(By.xpath("//div[text()='15']")).click();
 
             // Subject
             driver.findElement(By.id("subjectsInput")).sendKeys("English");
@@ -48,7 +48,7 @@ public class StudentFormAutomation {
             driver.findElement(By.xpath("//label[@for='hobbies-checkbox-1']")).click();
 
             // Address
-            driver.findElement(By.id("currentAddress")).sendKeys("Rautwadi, Jatherpeth, Akola, Maharashtra, India");
+            driver.findElement(By.id("currentAddress")).sendKeys("221 Demo Street, New Delhi, India");
 
             // State
             driver.findElement(By.id("react-select-3-input")).sendKeys("NCR");
